@@ -32,7 +32,7 @@ getname = requests.get(url='https://www.iesdouyin.com/web/api/v2/user/info/?sec_
 userinfo = json.loads(getname)
 name = userinfo['user_info']['nickname']
 print(userinfo['user_info']['nickname'])
-Path = name
+Path ='C:\\Users\\Administrator\\Desktop\\test2\\' + name
 if os.path.exists(path=Path) == False:
     os.mkdir(path=Path)
 else:
