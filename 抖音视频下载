@@ -82,3 +82,4 @@ for i in range(k) :
                     cost = end - start
                     print('{} ===>downloaded ===>cost {}s'.format(videotitle, cost))
                 except Exception as e:
+                    print('download error')
