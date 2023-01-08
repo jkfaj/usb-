@@ -21,7 +21,8 @@ headers = {
 "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Mobile Safari/537.36"
 }
 # string  = '在抖音，记录美好生活！ https://v.douyin.com/ekkTsYw/'
-string = '在抖音，记录美好生活！ https://v.douyin.com/MGCeTBL/'
+string = '在抖音，记录美好生活！ https://v.douyin.com/kkD4Rsh/'
+
  
 shroturl = re.findall('[a-z]+://[\S]+', string, re.I|re.M)[0]
 print(shroturl)
@@ -40,7 +41,7 @@ else:
 os.chdir(path=Path)
  
 """new function"""
-year = ('2019','2020','2021','2022')
+year = ('2018','2019','2020','2021','2022')
 month = ('01','02','03','04','05','06','07','08','09','10','11','12')
 timepool = [x+'-'+y+'-01 00:00:00' for x in year for y in month ]
 print(timepool)
